@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "variables" as *;
+
+@function lighten-color($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function darken-color($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@function set-color($background-color) {
+  @if lightness($background-color) > 60 {
+    @return $black;
+  }
+
+  @return $white;
+}

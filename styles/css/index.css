@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rating-box {
+  max-width: 400px;
+  background: radial-gradient(80.08% 80.08% at 50.09% 19.92%, rgba(37, 45, 55, 0.71) 0%, #252D37 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.rating-box .star .icon {
+  padding: 0.75rem;
+  border-radius: 100%;
+  background-color: hsl(213deg, 19%, 18%);
+}
+.rating-box .captions .title {
+  margin-top: 1rem;
+}
+.rating-box .captions .title h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.rating-box .captions .description {
+  margin-top: 1rem;
+}
+.rating-box .captions .description p {
+  line-height: 1.5rem;
+}
+.rating-box .rating ul {
+  display: flex;
+}
+.rating-box .rating ul li {
+  background-color: red;
+  padding: 0.95rem 1.2rem;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
