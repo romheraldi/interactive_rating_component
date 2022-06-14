@@ -22,11 +22,12 @@ body {
   height: 100vh;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .rating-box {
-  max-width: 400px;
-  background: radial-gradient(80.08% 80.08% at 50.09% 19.92%, rgba(37, 45, 55, 0.71) 0%, #252D37 100%);
-  padding: 2rem;
-  border-radius: 1rem;
+  @include card-container;
 
   .star {
     .icon {
@@ -38,7 +39,95 @@ body {
 
   .captions {
     .title {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+
+    .description {
+      margin-top: 1.5rem;
+      p {
+        line-height: 1.5rem;
+        color: $light-grey;
+      }
+    }
+  }
+
+  .rating {
+    margin-top: 1.5rem;
+    .points {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        display: none;
+
+        &:checked + label {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+
+      label {
+        background-color: $dark-blue;
+        border-radius: 100%;
+        width: 3.25em;
+        height: 3.25em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: $light-grey;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $light-grey;
+          cursor: pointer;
+          color: $white;
+        }
+      }
+    }
+
+    .submit {
+      margin-top: 1.5rem;
+      background-color: $orange;
+      color: $white;
+      border: none;
+      width: 100%;
+      border-radius: 2rem;
+      padding: 1rem;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $white;
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.thank-you {
+  @include card-container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .result {
+    background-color: $dark-blue;
+    padding: 0.5rem 1rem 0.3rem;
+    color: $orange;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+  }
+
+  .captions {
+    text-align: center;
+    .title {
+      margin-top: 2.5rem;
       h3 {
         font-weight: 700;
         font-size: 1.5rem;
@@ -49,19 +138,18 @@ body {
       margin-top: 1rem;
       p {
         line-height: 1.5rem;
+        color: $light-grey;
       }
     }
   }
+}
 
-  .rating {
-    ul {
-      display: flex;
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  bottom: 10px;
+}
 
-      li {
-        background-color: red;
-        padding: 0.95rem 1.2rem;
-        border-radius: 100%;
-      }
-    }
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

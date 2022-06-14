@@ -12,3 +12,11 @@
     @content;
   }
 }
+
+@mixin card-container {
+  max-width: 400px;
+  background: linear-gradient(to bottom right, $dark-blue, $very-dark-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+  @content;
+}

@@ -12,16 +12,6 @@
     <title>Frontend Mentor | Interactive rating component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 <body>
 
@@ -45,40 +35,60 @@
     </div>
 
     <div class="rating">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
-    </div>
-
-    <div class="submit-button">
-        Submit
+        <div class="points">
+            <input type="radio" name="point" id="point-1" value="1">
+            <label for="point-1">1</label>
+            <input type="radio" name="point" id="point-2" value="2">
+            <label for="point-2">2</label>
+            <input type="radio" name="point" id="point-3" value="3">
+            <label for="point-3">3</label>
+            <input type="radio" name="point" id="point-4" value="4">
+            <label for="point-4">4</label>
+            <input type="radio" name="point" id="point-5" value="5">
+            <label for="point-5">5</label>
+        </div>
+        <button class="submit">
+            SUBMIT
+        </button>
     </div>
 
     <!-- Rating state end -->
 </div>
 
-<div style="display:none">
+<div class="thank-you hidden">
 
     <!-- Thank you state start -->
 
-    You selected <!-- Add rating here --> out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">ROMHERALDI | ROVLO</a>.
+    <div class="icon">
+        <img src="images/illustration-thank-you.svg" alt="Thank you illustration">
     </div>
+
+    <div class="result">
+        You selected <span id="result">5</span> out of 5
+    </div>
+
+    <div class="captions">
+        <div class="title">
+            <h3>
+                Thank you!
+            </h3>
+        </div>
+
+        <div class="description">
+            <p>
+                We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+    <!-- Thank you state end -->
 </div>
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/romheraldi">Romheraldi | Rovlo</a>.
+</div>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>

@@ -60,9 +60,13 @@ body {
   height: 100vh;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .rating-box {
   max-width: 400px;
-  background: radial-gradient(80.08% 80.08% at 50.09% 19.92%, rgba(37, 45, 55, 0.71) 0%, #252D37 100%);
+  background: linear-gradient(to bottom right, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -72,25 +76,109 @@ body {
   background-color: hsl(213deg, 19%, 18%);
 }
 .rating-box .captions .title {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .rating-box .captions .title h3 {
   font-weight: 700;
   font-size: 1.5rem;
 }
 .rating-box .captions .description {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .rating-box .captions .description p {
   line-height: 1.5rem;
+  color: hsl(217deg, 12%, 63%);
 }
-.rating-box .rating ul {
+.rating-box .rating {
+  margin-top: 1.5rem;
+}
+.rating-box .rating .points {
   display: flex;
+  justify-content: space-between;
 }
-.rating-box .rating ul li {
-  background-color: red;
-  padding: 0.95rem 1.2rem;
+.rating-box .rating .points input {
+  display: none;
+}
+.rating-box .rating .points input:checked + label {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.rating-box .rating .points label {
+  background-color: hsl(213deg, 19%, 18%);
   border-radius: 100%;
+  width: 3.25em;
+  height: 3.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217deg, 12%, 63%);
+  transition: all 0.3s ease;
+}
+.rating-box .rating .points label:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+}
+.rating-box .rating .submit {
+  margin-top: 1.5rem;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.rating-box .rating .submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+
+.thank-you {
+  max-width: 400px;
+  background: linear-gradient(to bottom right, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thank-you .result {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 0.5rem 1rem 0.3rem;
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 20px;
+  margin-top: 1.5rem;
+}
+.thank-you .captions {
+  text-align: center;
+}
+.thank-you .captions .title {
+  margin-top: 2.5rem;
+}
+.thank-you .captions .title h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.thank-you .captions .description {
+  margin-top: 1rem;
+}
+.thank-you .captions .description p {
+  line-height: 1.5rem;
+  color: hsl(217deg, 12%, 63%);
+}
+
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 /*# sourceMappingURL=index.css.map */
