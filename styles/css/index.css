@@ -78,7 +78,7 @@ body {
 .rating-box .captions .title {
   margin-top: 1.5rem;
 }
-.rating-box .captions .title h3 {
+.rating-box .captions .title h1 {
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -160,7 +160,7 @@ body {
 .thank-you .captions .title {
   margin-top: 2.5rem;
 }
-.thank-you .captions .title h3 {
+.thank-you .captions .title h1 {
   font-weight: 700;
   font-size: 1.5rem;
 }
