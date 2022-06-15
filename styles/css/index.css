@@ -137,7 +137,7 @@ body {
   cursor: pointer;
 }
 
-.thank-you {
+v .thank-you {
   max-width: 400px;
   background: linear-gradient(to bottom right, hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
   padding: 2rem;
@@ -147,27 +147,27 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.thank-you .result {
+v .thank-you .result {
   background-color: hsl(213deg, 19%, 18%);
   padding: 0.5rem 1rem 0.3rem;
   color: hsl(25deg, 97%, 53%);
   border-radius: 20px;
   margin-top: 1.5rem;
 }
-.thank-you .captions {
+v .thank-you .captions {
   text-align: center;
 }
-.thank-you .captions .title {
+v .thank-you .captions .title {
   margin-top: 2.5rem;
 }
-.thank-you .captions .title h1 {
+v .thank-you .captions .title h1 {
   font-weight: 700;
   font-size: 1.5rem;
 }
-.thank-you .captions .description {
+v .thank-you .captions .description {
   margin-top: 1rem;
 }
-.thank-you .captions .description p {
+v .thank-you .captions .description p {
   line-height: 1.5rem;
   color: hsl(217deg, 12%, 63%);
 }
